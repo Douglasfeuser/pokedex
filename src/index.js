@@ -1,15 +1,7 @@
-import React from 'react'
-import { render } from 'react-dom'
-import { Provider } from 'react-redux'
-import Page from './containers/Page'
-import './style/main.css'
-import configureStore from './store/configureStore'
+import React from 'react';
+import { render } from 'react-dom';
+import Page from './ui/page/cmp-page';
 
-const store = configureStore()
+import './style/main.css';
 
-render(
-  <Provider store={store}>
-    <Page />
-  </Provider>,
-  document.getElementById('root')
-)
+render(<Page />, document.getElementById('root'));
